@@ -53,23 +53,23 @@ df_iris_sample = pd.read_csv(url)
 
 **② pandas-profiling**
 
-![(0607)_02. pandas-profiling_1](0607_Pandas&Kaggle.assets/(0607)_02. pandas-profiling_1-1623066876651.PNG)
+![(0607)_02. pandas-profiling_1](0607_Pandas&Kaggle.assets/(0607)_02. pandas-profiling_1.PNG)
 
-![(0607)_03. pandas-profiling_2](0607_Pandas&Kaggle.assets/(0607)_03. pandas-profiling_2-1623066900970.PNG)
+![(0607)_03. pandas-profiling_2](0607_Pandas&Kaggle.assets/(0607)_03. pandas-profiling_2.PNG)
 
-
-
-![(0607)_04. pandas-profiling_3](0607_Pandas&Kaggle.assets/(0607)_04. pandas-profiling_3-1623066909188.PNG)
+![(0607)_04. pandas-profiling_3](0607_Pandas&Kaggle.assets/(0607)_04. pandas-profiling_3.PNG)
 
 - **파랑** : **양**의 상관관계
 - **빨강** : **음**의 상관관계
 - **짙을수록 상관관계 ↑**
 
-![(0607)_05. pandas-profiling_4](0607_Pandas&Kaggle.assets/(0607)_05. pandas-profiling_4-1623067137988.PNG)
+
+
+![(0607)_05. pandas-profiling_4](0607_Pandas&Kaggle.assets/(0607)_05. pandas-profiling_4.PNG)
 
 ​	변수를 x축과 y축으로 설정해서 관계를 확인할 수 있다.
 
-![(0607)_06. pandas-profiling_5(높은 상관관계)](0607_Pandas&Kaggle.assets/(0607)_06. pandas-profiling_5(높은 상관관계)-1623067207447.PNG)
+![(0607)_06. pandas-profiling_5(높은 상관관계)](0607_Pandas&Kaggle.assets/(0607)_06. pandas-profiling_5(높은 상관관계).PNG)
 
 ​	높은 상관관계를 가지는 경우 도표에 나타나지 않는다.
 
@@ -87,7 +87,7 @@ df_iris_sample = pd.read_csv(url)
 
   ① `index_col=None`
 
-  ![(0607)_08. index_col=None](0607_Pandas&Kaggle.assets/(0607)_08. index_col=None.PNG)
+  ![(0607)_08. index_col=None](0607_Pandas&Kaggle.assets/(0607)_08. index_col=None-1623163805283.PNG)
 
   ​	`Unnamed`가 나온다.
 
@@ -95,7 +95,7 @@ df_iris_sample = pd.read_csv(url)
 
   ② `index_col=0`
 
-  ![(0607)_07. index_col=0](0607_Pandas&Kaggle.assets/(0607)_07. index_col=0-1623067366171.PNG)
+  ![(0607)_07. index_col=0](0607_Pandas&Kaggle.assets/(0607)_07. index_col=0.PNG)
 
   ​		`Unnamed`가 나오지 않는다.
 
@@ -103,7 +103,7 @@ df_iris_sample = pd.read_csv(url)
 
 - 기타 커맨드(***시험기간이라 불가피하게 사진으로...***)
 
-  ![(0607)_11.](0607_Pandas&Kaggle.assets/(0607)_11..jpg)
+![(0607)_11.](0607_Pandas&Kaggle.assets/(0607)_11.-1623163829488.jpg)
 
 
 
