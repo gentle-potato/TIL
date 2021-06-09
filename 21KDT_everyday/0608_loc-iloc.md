@@ -40,11 +40,11 @@
 
 #### Before encoding
 
-![(0608)_01. before encoding](0608_abstraction.assets/(0608)_01. before encoding-1623165157933.PNG)
+![(0608)_01. before encoding](0608_loc-iloc.assets/(0608)_01. before encoding.PNG)
 
 #### After encoding
 
-![(0608)_02. after encoding](0608_abstraction.assets/(0608)_02. after encoding.PNG)
+![(0608)_02. after encoding](0608_loc-iloc.assets/(0608)_02. after encoding.PNG)
 
 
 
