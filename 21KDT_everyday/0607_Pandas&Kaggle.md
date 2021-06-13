@@ -11,6 +11,8 @@ PyPI.org에서 패키지 다운로드
 >1. pandas 1.2.3
 >2. pandas-profiling 2.12.0
 >3. ipywidgets 7.6.3
+>4. ploty 4.14.3
+>5. scikit-learn 0.23.2
 
 :heavy_check_mark:**프로젝트마다 맞는 환경을 구축하는 것이 가장 중요하다.**
 
