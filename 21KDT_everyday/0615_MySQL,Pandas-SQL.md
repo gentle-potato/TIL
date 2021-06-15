@@ -1,4 +1,4 @@
-# MySQL과 Python에서 SQL 사용하기
+# MySQL과 Pandas에서 SQL 사용하기
 
 
 
@@ -7,6 +7,8 @@
 
 
 ### 데이터
+
+`SELECT`와 `WHERE` `JOIN`에 관한 내용은 알고 있으니, 실제로 작성해본 코드만 기록한다.
 
 ```mysql
 # 사용할 스키마를 선언해주는 것이 편하다.
@@ -48,11 +50,16 @@ where B.country = 'USA';
 select customers.state, customers.customerName, payments.checkNumber from customers
 left join payments
 on customers.customerNumber = payments.customerNumber
-where payments.paymentDate >= '2003-06-06';
+where payments.paymentDate >= '2004-10-06';
 ```
+
+
+
+`LEFT JOIN`과 `INNER JOIN`만 알고있으면 된다. (`RIGHT JOIN`은 `Null`이 많이 나온다...)
 
 
 
 ### 스키마
 
 교재 p.67 참고
+
