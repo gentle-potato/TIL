@@ -9,3 +9,5 @@
 이제부터 GitHub와 Blog 꼼꼼하게 정리해보자-!!
 
 Oracle DB 공부도 추가!
+
+KOBACO 필기 준비...?
