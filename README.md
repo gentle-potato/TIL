@@ -13,3 +13,5 @@ Oracle DB 공부도 추가!
 빅분기 실기-!
 
 KOBACO 필기 준비...?
+
+Tableau도 잊지 말자-!
