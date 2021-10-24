@@ -6,14 +6,14 @@
 
 ## 대문에 들어갈 내용
 
-이제부터 GitHub와 Blog 꼼꼼하게 정리해보자-!!
+***<우선순위>***
 
-Oracle DB 공부도 추가!
-
-빅분기 실기-!
-
-KOBACO 필기 준비...?
-
-Tableau도 잊지 말자-!
-
-***공부 우선순위 정하고 계획 세우기***
+1. Hands-On Machine Learning
+2. 파이썬 머신러닝 완벽 가이드
+3. Tableau
+4. 빅데이터분석기사 실기
+5. 정보처리기사 실기
+6. Oracle DB(OCP)
+7. 누구나 파이썬 통계분석
+8. WikiDocs
+9. ProDS
