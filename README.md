@@ -13,7 +13,7 @@
 3. Tableau
 4. 빅데이터분석기사 실기
 5. 정보처리기사 실기
-6. Oracle DB(OCP)
+6. Oracle DB(OCP) - SQL
 7. 누구나 파이썬 통계분석
 8. WikiDocs
 9. ProDS
