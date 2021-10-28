@@ -8,6 +8,8 @@
 
 ***<Study Plans>***
 
+***- Study Plans -***
+
 1. **SQL**
    - SQL로 맛보는 데이터 전처리 분석
    - SQL 전문가 가이드(The Guide for  SQL Professional)
@@ -29,17 +31,3 @@
    - 시나공 정보처리기사 실기
    - +) 기사패스 NCS 정보처리기사 실기 바이블(2021)
    - 기사패스 NCS 정보처리기사 실기 문제집 1100제(1권+2권 합본세트)(2021)
-
-
-
-
-
-1. Hands-On Machine Learning
-2. 파이썬 머신러닝 완벽 가이드
-3. Tableau
-4. 빅데이터분석기사 실기
-5. 정보처리기사 실기
-6. Oracle DB(OCP) - SQL
-7. 누구나 파이썬 통계분석
-8. WikiDocs
-9. ProDS
