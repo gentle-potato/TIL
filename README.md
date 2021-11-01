@@ -6,9 +6,9 @@
 
 ## 대문에 들어갈 내용
 
-***<Study Plans>***
+***<Self-Study Plans>***
 
-***- Study Plans -***
+***- Self-Study Plans -***
 
 1. **SQL**
    - SQL로 맛보는 데이터 전처리 분석
