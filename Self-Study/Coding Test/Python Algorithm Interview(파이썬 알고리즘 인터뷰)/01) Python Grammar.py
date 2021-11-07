@@ -47,3 +47,66 @@ print(len(b))
 import sys
 print(sys.getsizeof(a))
 print(sys.getsizeof(b))
+
+
+
+### enumerate ###
+a = ['a1', 'b2', 'c3']
+for i, v in enumerate(a):
+    print(i, v)
+
+
+
+### locals ###
+# locals()는 로컬 심볼 테이블 딕셔너리를 가져오는 메소드로 업데이트 또한 가능
+import pprint
+pprint.pprint(locals())
+# pprint로 출력하게 되면 보기 좋게 줄바꿈 처리를 해주기 때문에 가독성 ↑
+
+
+
+### 변수명과 주석 ###
+# 어느 코드가 보기 좋은가?
+
+# 1)
+# def numMatchingSubseq(self, S: str, words: List[str]) -> int:
+#     a = 0
+#
+#     for b in words:
+#         c = 0
+#         for i in range(len(b)):
+#             d = S[c:].find(b[i])
+#             if d < 0:
+#                 a -= 1
+#                 break
+#             else:
+#                 c += d + 1
+#         a += 1
+#
+#     return a
+
+# 2)
+# def numMatchingSubseq(self, S: str, words: List[str]) -> int:
+#     matched_count = 0
+#
+#     for word in words:
+#         pos = 0
+#         for i in range(len(word)):
+#             # Find matching position for each character.
+#             found_pos = S[pos:].find(word[i])
+#             if found_pos < 0:
+#                 matched_count -= 1
+#                 break
+#             else:   # If found, take step position forward.
+#                 pos += found_pos + 1
+#         matched_count += 1
+#
+#     return matched_count
+
+# 당연히 2)!
+
+
+
+### Zen of Python ###
+import this
+# The Zen of Python, by Tim Peters
