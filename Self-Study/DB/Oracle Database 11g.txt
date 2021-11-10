@@ -3,3 +3,5 @@ https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
 
 *Community
 https://community.oracle.com/tech/developers/categories/oracle_database_express_edition_xe
+
+*교재 NAVER 카페 참고
