@@ -10,7 +10,7 @@
 
 ***- Self-Study Plans -***
 
-1. **SQL**
+1. **★★★SQL**
    - SQL로 맛보는 데이터 전처리 분석
    - SQL 전문가 가이드(The Guide for  SQL Professional)
    - Do it! 오라클로 배우는 데이터베이스 입문
