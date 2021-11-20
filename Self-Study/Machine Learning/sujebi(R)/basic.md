@@ -3,7 +3,7 @@
 - `getwd()` : 현재 위치
 - `source("파일명")` : ("파일명"으로) 저장
 - `setwd()` : 경로 지정
-  - `set("C:\Users\khl06\Desktop\Mr.GentleKim\TIL\Self-Study\Machine Learning\sujebi(R)")`
+  - `setwd("C:\Users\khl06\Desktop\Mr.GentleKim\TIL\Self-Study\Machine Learning\sujebi(R)")`
 - `q()` : 종료
 - `save.image()` : `Ctrl + s`
 - `ls()` : 현재 작업공간에 저장된 내용
