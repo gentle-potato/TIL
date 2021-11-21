@@ -497,4 +497,4 @@ data_zscore
 ### (2) 표본 추출 함수 ###
 
 # ① sample 함수 #
-
+# sample(x, size, replace, prob)
