@@ -498,3 +498,168 @@ data_zscore
 
 # ① sample 함수 #
 # sample(x, size, replace, prob)
+
+# 비복원 추출
+s <- sample(x=1:10,
+            size=5,
+            replace=FALSE)
+s
+
+# 복원 추출
+s <- sample(x=1:10,
+            size=5,
+            replace=TRUE)
+s
+
+# 가중치를 주어 표본 추출
+s <- sample(x=1:10,
+            size=5,
+            replace=TRUE,
+            prob=1:10)   # 1에서 10까지 각각 가중치를 주어 표본을 추출
+s
+
+# ② createDataPartition 함수 #
+# createDataPartition(y, times, p, list)
+# createDataPartition, createFolds 함수를 처음 사용할 경우 설치 필요
+install.packages('caret')
+library(caret)
+
+library(caret)
+ds <- createDataPartition(
+  iris$Species, times=1, p=0.7
+)
+ds   # $Resample1 변수에 훈련 데이터 저장
+table(iris[ds$Resample1, "Species"])
+table(iris[-ds$Resample1, "Species"])
+idx <- as.vector(ds$Resample1)
+idx
+test_idx <- as.vector(-ds$Resample1)
+test_idx
+remove(test_idx)
+ds_train <- iris[idx, ]
+ds_test <- iris[-idx, ]   # 훈련 데이터가 아닌 것을 평가 데이터로 생성
+ds_train
+ds_test
+
+# ③ createFolds 함수 #
+# createFolds(y, k, list, returnTrain)
+library(caret)
+ds_k_fold <- createFolds(iris$Species,
+                         k=3,
+                         list=TRUE,
+                         returnTrain=FALSE)   # TRUE  : 훈련 데이터의 위치 반환
+                                              # FALSE : 평가 데이터의 위치 반환
+ds_k_fold
+
+
+
+
+
+##### <2> 기초 통계량 추출 #####
+
+
+
+### (1) 중심 경향성 통계량 ###
+
+# ① 평균 #
+# mean(x, trim=0, na.rm=False, ...)
+x <- c(0:50, 50)
+x
+mean(x)
+
+mean(x, trim=0.10)   # trim : 양 극단의 일정 부분을 뺄 때 사용
+
+x <- c(12, 7, 4, -5, NA)
+x
+mean(x)   # 결측값이 있으면 NA로 출력
+mean(x, na.rm=TRUE)
+
+mean(cars$speed)
+mean(cars$speed, trim=0.10)
+
+library(dplyr)
+cars %>% summarise(
+  mean01=mean(speed),
+  mean02=mean(speed, trim=0.1)
+)
+
+# ② 중위수 #
+# median(x, na.rm=FALSE)
+x <- c(12, 7, 5, -21, 8, -5)
+x
+median(x)
+
+x <- c(12, 7, 4, -5, NA)
+x
+median(x)
+median(x, na.rm=TRUE)   # 결측값이 있으면 NA로 출력
+
+median(cars$speed)
+
+library(dplyr)
+cars %>% summarise(
+  median01=median(speed)
+)
+
+# ③ 최빈수 #
+# 직접 함수를 정의하여 구함
+table(x)   # table 함수 이용 빈도 계산
+
+# which(x, arr.ind=FALSE) : 특정값의 위치를 찾을 수 있는 함수
+# arr.ind : 일치 여부를 확인하기 위한 대응값
+getmode <- function(x) {
+  y <- table(x)
+  names(y)[which(y==max(y))]   # 최빈수 위치 탐색 및 반환
+}
+names(table(x)[which(table(x)==max(table(x)))])
+getmode(x)
+
+x <- c(2, 1, 1, 3, 1)
+getmode(x)
+
+
+
+### (2) 산포도 통계량(분포 계산) ###
+
+# ① 분산 #
+# var(x, y=NULL, na.rm=FALSE, ...)
+# ★다른 패키지의 함수와 충돌될 경우 stats::var() 함수로 사용
+v <- c(3, 4, 5, 2, 4, 3, 4)
+var(v)
+var(1:10)
+
+# ② 표준편차 #
+# sd(x, na.rm=FALSE)
+v <- c(3, 4, 5, 2, 4, 3, 4)
+sd(v)
+sd(1:10)
+
+# ③ 범위 #
+v <- c(1, 7, 3, 5, 11, 4, 6)
+diff(range(v))
+diff(range(1:10))
+
+
+
+### (3) 순위 계산 ###
+# ★1등, 2등 값이 동일하고 그 다음에 3등이 있을 때,
+# row_number 함수는 1, 2, 3 순서로 나타내고,
+# min_rank는 1, 1, 3 순서로, dense_rank는 1, 1, 2 순서로 출력
+x <- c(1, 1, 5, 5, 9, 7)
+x
+library(dplyr)
+row_number(x)
+min_rank(x)
+dense_rank(x)
+
+cars %>%
+  arrange(dist) %>%
+  mutate(rank=row_number(dist))
+
+cars %>%
+  arrange(dist) %>%
+  mutate(rank=min_rank(dist))
+
+cars %>%
+  arrange(dist) %>%
+  mutate(rank=dense_rank(dist))
