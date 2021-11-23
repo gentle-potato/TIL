@@ -207,7 +207,7 @@ pima <- pima %>% mutate(age_gen=cut(pima$age, c(20, 40, 60, 100), right=FALSE,
 table(pima$age_gen)
 
 
-### (3) 더미 변수(Dummy Variable) 생성 ###
+### (3) 더미변수(Dummy Variable) 생성 ###
 # lm 함수에서 범주형 변수는 자동으로 더미 변수로 변환하여 분석을 수행
 # 더미 변수의 개수는 (범주의 개수 - 1)이고, 기준이 되는 값은 0
 
