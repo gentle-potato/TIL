@@ -170,9 +170,49 @@ cor.test(df_pima$triceps, df_pima$insulin, method="kendall")   # 귀무가설 �
 
 
 
-##### <3> 변수 선택 #####
-
+##### <3> 변수 선택(Feature Selection) #####
+# 변수 선택 : 데이터의 독립변수(x) 중 종속변수(y)에 가장 관련성이 높은 변수(Feature)만을 선정하는 방법
 
 ### (3) 변수 선택 방법 ###
+# 전진선택법(Fowrward Selection) / 후진소거법(Backward Elimination) / 단계적방법(Stepwise Method)
+# 주어진 데이터 세트에 대한 통계 모델의 상대적인 품질을 평가하는 AIC(Akaike Information Criterion)를 기준으로 모델을 선택
 
 # ① step 함수 #
+# AIC가 작아지는 방향으로 단계적으로 변수를 선택하는 함수
+# AIC : 통계 모델 간의 적합성을 비교할 수 있는 지수로 일반적으로 AIC는 낮을수록 더 좋다고 평가
+# step(object, scope, direction) → direction : forward, backward, both
+# 변수 추가는 '+' 기호로 표기되며, 변수 제거는 '-' 기호로 표기
+
+# ② formula 함수 #
+# fomula(x) → x : step 함수의 반환값을 입력
+
+data(mtcars)
+m1 <- lm(hp~., data=mtcars)
+m2 <- step(m1, direction="both")
+# 변수를 추가하거나 제거하는 작업보다 아무 작업도 하지 않은 현재 상태가
+# 가장 AIC가 좋은 207.98이므로 최종 모델로 선정
+formula(m2)   # hp ~ disp + wt + carb
+
+
+### (2) 파생변수(Derived Variable) 생성 ###
+
+library(mlbench)
+data(PimaIndiansDiabetes)
+pima <- PimaIndiansDiabetes
+summary(pima$age)
+library(dplyr)
+pima <- pima %>% mutate(age_gen=cut(pima$age, c(20, 40, 60, 100), right=FALSE,
+                                    label=c("Young", "Middle", "Old")))
+table(pima$age_gen)
+
+
+### (3) 더미 변수(Dummy Variable) 생성 ###
+# lm 함수에서 범주형 변수는 자동으로 더미 변수로 변환하여 분석을 수행
+# 더미 변수의 개수는 (범주의 개수 - 1)이고, 기준이 되는 값은 0
+
+중요도 <- c('상', '중', '하')
+df <- data.frame(중요도)
+df
+transform(df,
+          변수1=ifelse(중요도=="중", 1, 0),
+          변수2=ifelse(중요도=="하", 1, 0))
