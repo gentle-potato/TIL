@@ -160,3 +160,125 @@ summary(second_model)
 # auc 함수를 처음 사용할 경우 ModelMetrics 패키지 설치 필요
 install.packages("ModelMetrics")
 library(ModelMetrics)
+
+install.packages("ISLR")
+library(ISLR)
+str(Default)
+head(Default)
+summary(Default)   # 결측값 없음
+
+# 분석 모형 구축 - 유의성 검정
+library(ISLR)
+bankruptcy <- Default
+set.seed(202012)           # 동일 모형 생성을 위한 seed 생성
+train_idx <- sample(
+  1:nrow(bankruptcy),
+  size=0.8*nrow(bankruptcy),
+  replace=FALSE
+)
+test_idx <- (-train_idx)   # train_idx를 제외하고 test_idx 생성
+# ----- #
+1:nrow(bankruptcy)
+train_idx
+test_idx
+cat("length of train_idx :", length(train_idx))
+cat("length of test_idx  :", length(test_idx))
+# length(train_idx)   # ★length 함수는 열의 개수...;;
+# length(test_idx)
+cat("dimension of train_idx :", dim(train_idx))   # NULL
+cat("dimension of test_idx  :",dim(test_idx))     # NULL
+# ----- #
+bankruptcy_train <- bankruptcy[train_idx, ]
+bankruptcy_test <- bankruptcy[test_idx, ]
+View(bankruptcy_train)
+cat("dimension of bankruptcy_train :", dim(bankruptcy_train))
+cat("dimension of bankruptcy_test  :", dim(bankruptcy_test))
+
+full_model <- glm(default~.,
+                  family=binomial,
+                  data=bankruptcy_train)
+
+# 분석 모형 구축 - step 함수 이용
+step_model <- step(full_model, direction="both")
+# default ~ student + balance
+
+# 분석 모형 구축 - 변수의 유의성 검정
+summary(step_model)   # Null deviance : 2354.0, Residual deviance : 1287.4
+# studentYes와 balance는 P-Value가 유의수준 0.05보다 작으므로 유의미한 변수...!!
+
+# 분석 모형 구축 - 모형의 유의성 검정
+null_deviance <- 2354.0                               # Null deviance : 독립변수가 없는 모형의 이탈도
+residual_deviance <- 1287.4                           # Residual deviance : 선택된 모형의 이탈도
+model_deviance <- null_deviance - residual_deviance   # Null deviance와 Residual deviance의 값으로 카이제곱 검정 실시
+pchisq(model_deviance,
+       df=2,   # 자유도는 선택된 변수의 개수
+               # Null deviance의 자유도가 7999이고, Residual deviance의 자유도가 7997이므로
+       lower.tail=FALSE)
+# 2.458968e-232 → 자유도(df)가 2인 카이제곱 분포의 확률변수가 model_deviance일 때 누적분포 함수의 값
+
+# 분석 모형 구축 - 다중공선성 확인
+install.packages("car")
+library(car)
+vif(step_model)   # VIF가 4를 초과하는 값이 없으므로 다중공선성 문제가 없다고 판단
+
+# 분석 모형 평가 - 평가용 데이터를 이용한 분류
+pred <- predict(step_model,
+                newdata=bankruptcy_test[, -1],   # 첫 번째 열을 제외
+                type="response")
+df_pred <- as.data.frame(pred)
+df_pred$default <- ifelse(df_pred$pred>=0.5,
+                          df_pred$default <- "Yes",
+                          df_pred$default <- "No")
+df_pred$default <- as.factor(df_pred$default)
+
+# 분석 모형 평가 - 혼동 행렬
+install.packages("caret")
+library(caret)
+confusionMatrix(data=df_pred$default,
+                reference=bankruptcy_test[ , 1])
+# Kappa : 0.4439 → 카파 통계량은 0.4439로서 모형은 보통의 일치도를 보임
+
+# 분석 모형 평가 - AUC
+library(ModelMetrics)
+auc(actual=bankruptcy_test[ , 1], predicted=df_pred$default)
+# 0.6481792 → 0.6과 0.7 사이이므로 불량(Poor)의 성능을 보임
+
+
+### (3) 의사결정나무(Decision Tree) ###
+
+# ① 의사결정나무 개념 #
+# 의사결정나무 기법의 해석이 용이한 이유는 계산 결과가 의사결정나무에 직접 나타나기 떄문
+
+# ② 의사결정나무 분석 함수 종류 #
+# rpart() : CART 기법 사용 / tree() : 불순도의 측도로 엔트로피 지수 사용 / ctree()
+# CART 기법 : 각 독립변수를 이분화하는 과정을 반복하여 이진 트리 형태를 형성함으로써 분류를 수행하는 방법
+# → 불순도의 측도로 출력(목적)변수가 범주형일 경우는 지니 지수를 이용하고,
+#   연속형일 경우는 분산을 이용한 이진 분리(Binary Split)를 이용
+
+str(iris)
+head(iris)
+summary(iris)
+
+# 분석 모형 구축
+library(rpart)
+md <- rpart(Species~., data=iris)   # iris 데이터를 rpart 함수를 이용해 호출
+md
+
+# 시각화 → 시험 환경에서는 사용 불가...;;
+plot(md, compress=TRUE, margin=0.5)
+text(md, cex=1)
+
+install.packages("rpart.plot")
+library(rpart.plot)
+windows(height=10, width=12)
+prp(md, type=2, extra=2)   # type : 트리 표현, extra : 노드의 추가 정보 표기
+
+# 분석 모형 평가
+ls(md)   # 저장된 변수 확인
+md$cptable   # 가지치기 및 트리의 최대 크기를 조절하기 위해 cptable을 사용
+# CP : 복잡성 / nsplit : 가지의 분기 수 / rel error : 오류율 / xerror : 교차 검증 오류 / xstd : 교차 검증 오류의 표준오차
+plotcp(md)
+
+tree_pred <- predict(md, newdata=iris, type="class")
+library(caret)
+confusionMatrix(tree_pred, reference=iris$Species)
