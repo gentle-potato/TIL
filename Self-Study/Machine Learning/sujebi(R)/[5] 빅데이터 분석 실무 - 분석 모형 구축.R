@@ -597,3 +597,135 @@ confusionMatrix(as.factor(pred),
 # dist(data, method) → method : 거리 측정 방법(euclidean, maximum, manhattan, canberra, binary, minkowsky)
 # hclust(data, method) → mothod : 군집 연결 방법(single, complete, average, median, ward.D)
 
+str(USArrests)
+head(USArrests)
+summary(USArrests)
+
+# 유클리디안 거리 측정
+US.dist_euclidean <- dist(USArrests, "euclidean")
+US.dist_euclidean
+# 맨하탄 거리 측정
+US.dist_manhattan <- dist(USArrests, "manhattan")
+US.dist_manhattan
+# 마할라노비스 거리 측정
+mahalanobis(USArrests, colMeans(USArrests), cov(USArrests))   # center : 중심값, cov : 공분산
+
+# 분석 모형 구축(계층적 군집 분석)
+# single : 최단거리법, complete : 최장거리법, average : 평균거리법, median : 중심연결법, ward.D : 와드연결법
+US.single <- hclust(US.dist_euclidean^2,   # 왜 제곱을 하는거지...?
+                    method="single")       # 최단거리법
+plot(US.single)
+US.complete <- hclust(US.dist_euclidean^2, method="complete")
+plot(US.complete)
+
+# ② 군집 분석을 통한 그룹 확인 #
+# 덴드로그램 결과에서 가로선을 그었을 때의 세로축 개수를 군집의 수로 선정
+# cutree 함수나 rect.hclust 함수를 이용하여 그룹화
+
+group <- cutree(US.single, k=6)   # 6개의 그룹으로 분할
+group
+
+rect.hclust(US.single, k=6, border="blue")
+
+
+### (5) 비계층적 군집 분석 - k-평균(k-means) 군집 분석 ###
+
+# ① k-평균 군집 개념 #
+# k개만큼 원하는 군집 수를 초깃값으로 지정하고,
+# 각 개체를 가까운 초깃값에 할당하여 군집을 형성하고 각 군집의 평균을 재계산하여 초깃값을 갱신
+# 갱신 과정을 반복하여 k개의 최종 군집을 형성
+
+# ② 분석 모형 구축 #
+# kmeans(data, centers) → centers : 군집의 개수 설정
+
+# 분석 모형 구축
+# wine 데이터 세트를 사용하기 위해서는 rattle 패키지 설치 필요
+install.packages("rattle")
+library(rattle)
+df = scale(wine[-1])
+set.seed(1234)
+fit.km <- kmeans(df, 3, nstart=25)   # nstart : k-means 알고리즘을 몇 번 실행할지 결정
+fit.km$size                          # k개의 점과 가장 가까운 데이터의 개수
+fit.km$centers                       # 속성별 k개의 점에 대한 위치
+
+# 분석 모형 활용
+plot(df, col=fit.km$cluster)
+points(fit.km$center,   # fit.km$centers로 해도 같은 결과
+       col=1:3,
+       pch=8,
+       cex=1.5)
+
+
+
+
+
+##### <3> 연관 모델 #####
+
+
+### (1) 연관성 분석(Association Analysis)의 개념 ###
+# 연관성 분석 : 데이터 내부에 존재하는 항목 간의 상호관계 혹은 종속관계를 찾아내는 기법
+# 장바구니 분석(Market Basket Analysis) or 서열 분석(Sequence Analysis)
+
+
+### (2) 연관성 분석 함수 ###
+
+# ① as 함수 #
+# as(data, class) → class : 연관 분석에서는 "transactions"
+
+# ② inspect 함수 #
+# 트랜젝션 데이터가 아닌 데이터는 apriori 함수를 이용하기 전에 트랜잭션 형태로 변경하여 사용해야 함
+# inspect(x, ...)
+
+# ③ apriori 함수 #
+# apriori(data, parameter, appearance, control)
+# → parameter : 최소 지지도(supp), 신뢰도(conf), 최대 아이템 개수(maxien), 최소 아이템 개수(minien)
+
+mx.ex <- matrix(
+  c(1, 1, 1, 1, 10,
+    1, 1, 0, 1, 0,
+    1, 0, 0, 1, 0,
+    1, 1, 1, 0, 0,
+    1, 1, 1, 0, 0),
+  ncol=5,
+  byrow=TRUE   # 예제용 5*5 구매 데이터(행렬)
+)
+mx.ex
+rownames(mx.ex) <- c("p1", "p2", "p3", "p4", "p5")
+colnames(mx.ex) <- c("a", "b", "c", "d", "e")
+mx.ex
+
+# Transaction 클래스로 변환 및 데이터 확인
+# as, apriori, inspect 함수 사용을 위해 arules 패키지 설치 필요
+install.packages("arules")
+library(arules)
+trx.ex <- as(mx.ex, "transactions")
+trx.ex
+summary(trx.ex)
+inspect(trx.ex)
+#     items           transactionID
+# [1] {a, b, c, d, e} p1
+# [2] {a, b, d}       p2
+# [3] {a, d}          p3
+# [4] {a, b, c}       p4
+# [5] {a, b, c}       p5
+
+# ----- #
+
+# 데이터 세트 준비
+install.packages("arulesViz")
+library(arulesViz)
+data("Groceries")
+summary(Groceries)   # 이미 transaction으로 변환되어 있음
+
+# apriori 함수를 통한 연관 규칙 생성
+apr <- apriori(Groceries,
+               parameter=list(support=0.01,      # 최소 지지도 : 0.01
+                              confidence=0.3))   # 최소 신뢰도 : 0.3
+# [125 rule(s)]를 통해 총 125개의 연관 규칙이 생성된 것을 확인
+# Parameter specification을 통해 구체적인 매개변수 값을 확인 가능
+# 규칙의 수에 따라 지지도와 신뢰도를 높이거나 낮추어 규칙 조정 가능
+
+# inspect 함수를 통해 연관 규칙 확인
+inspect(sort(apr, by="lift")[1:10])   # lift(향상도)
+# 1번 규칙을 통해 citrus fruit, other vegetables와 root vegetables에 대한 향상도가 3.295045로 가장 높음을 확인
+# 이를 통해 묶음 상품으로 같이 구성하거나, 진열 위치를 조정하는 것과 같이 분석 결과 활용 가능
