@@ -780,6 +780,41 @@
       </zones>
       <simple-id uuid='{01E3352E-9704-4785-99A9-D1ECDAD2DE31}' />
     </dashboard>
+    <dashboard name='Ep12. 스토리 만들기' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{7FA21F14-5C1C-4127-8A64-956399538226}' />
+    </dashboard>
     <dashboard name='매출 대시보드'>
       <layout-options>
         <title>
@@ -854,8 +889,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98230' id='17' param='vert' type-v2='layout-flow' w='99064' x='468' y='885'>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='19' param='vert' type-v2='layout-flow' w='99064' x='468' y='885'>
                 <zone h='4535' id='14' type-v2='title' w='99064' x='468' y='885'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1020,7 +1055,7 @@
       </viewpoint>
       <simple-id uuid='{D2E3FFAB-494E-4A9D-AB8B-185448498821}' />
     </window>
-    <window class='dashboard' maximized='true' name='매출 대시보드'>
+    <window class='dashboard' name='매출 대시보드'>
       <viewpoints>
         <viewpoint name='시도별 매출'>
           <zoom type='entire-view' />
@@ -1037,6 +1072,11 @@
       </viewpoints>
       <active id='11' />
       <simple-id uuid='{FB80FAA9-C288-4846-8D50-4FB4FEAC81D3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Ep12. 스토리 만들기'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{00639F59-BCE8-4512-9164-C8BE5046DD49}' />
     </window>
   </windows>
   <thumbnails>
@@ -1062,6 +1102,39 @@
       AKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKg
       mgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoC
       oJoAqCYAqv0B8JqhDjuEUg4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Ep12. 스토리 만들기' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGLElEQVR4nO3cXWiVdQDH8d+2M+3Mvbg19+K2dspp602pkUUjaERIkhpJL1BQdJFmXXQR
+      aBE4oYKEICorMTJCCBXRm2nYCfFCFuVC83Uma+qZj5t6zmpvup3t6WI0PIg3UQ39fT9X53n4
+      8+d//vDlPM95OCcrDMNQgKnsyV4AMJkIANYIANZympubm/8++OT9t/XVpi3a3XpICx99OGNg
+      X7JbG9Z9pKLYvSq9Ka2PP1yrjZs2a1pZTLdWlV01cTrVoeZPt6mp8b6Jcx+8t0bRaQUKgkBB
+      EGgkjGh64TSdOHJQnWe69MWXX6tpXrXWfhNXY8NdkqS2+Fbt/iWhzrbv1TGQr+3fblRjY6PU
+      f1Yr312nksLoxHxFpeUa6U/p0JFjShz7WdtbO9RzcJfSZXM1oyD3P9pCXM8iVx6c7B7Q+vXr
+      JUln29v02aYdSvX26/U331L3sVYFQZf6L6WltDR/wdN6qWxU73zSoqb5d1018c6dPyiqfgW9
+      g6qcnidJGhjozxiTE8mRJOXl5anv0p9SVpYUhrryrnxoaEh1dzRq5qUctaUGNfhnUqe6ulVb
+      UaxHHpyXMd9oekyFRTeroeFmjfTka+/vhxVOCcVtPq4lIwD1BVq2bJnyK+fotUXzVFAzT8uf
+      KdOG7bu05o0Xdbr9wPi4aLFKs09o9dotWvHGyowpwpEhxeNxzZzbpCeeqVJLy07V3TNfd8yq
+      0Z13joeSSCRUXV2t0XRakrRp8zatWrVKDQ0NUqojY77yqlodOt2ugeGLis2pV0dBsWqrytV9
+      +oS6Emd0JnFmfGB2rgpKK1VYO1OS1N7ervr6eqkj8W/vGW4gmQFEi/XKy68oe0qeNNylVE+X
+      ftwfqKQkps7fjinRfVGRIwdVmxfT6g8+17IVryocHtSFcwmlIwWqKC1SVm5Ujz2+aGLKRU8u
+      nXj93AsvSZLi8biWLFkycT4MQ42Njip5/pySiVMZS5o9e7bagt/01JJnJUkjqfFLs/KaWXrg
+      /j4Nj42P27d7h8amTpfCUL+3H9Sewxe0fPlifdcR/9c2CzeejHsADffp+MlT6ukdUqx0qvb8
+      dEQVtXV6/unFOtq2T0PZ+Rruv6iS0gplZ0sXero1NJqj/OxB/TEyRRWlRepLndfho8cnrsuD
+      INCF3gEVT8vVgV8PKwgCRSIRDQ4OKuhJqqKiTLfVVOpk52mNhDmKVZXpXO9l3T0nNr6msWHt
+      a92vrDCtIAiUm1eoyvIZ0qWUtrbsVU1VhSTplln1ilVX6nLfRfUOR7RwQZNysqRk91mV1Nyu
+      6XmRq9897GVd60HY2fY2tXZe1tIFD/3fawL+N9cMAHDAcwBYIwBYIwBY46uR60wymVQymZzs
+      ZVylrq5uspfwj/AJAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsE
+      AGsEAGv8IOY6E41GVVJSMtnLuGHwrxCwxiUQrBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArP0Fn9mDJpKwB8gAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='192' name='매출 대시보드' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
