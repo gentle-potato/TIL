@@ -760,9 +760,9 @@
       <zones>
         <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
-            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
-            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
-            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+            <zone h='4253' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5083' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15560'>
               <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='' id='1' />
@@ -850,6 +850,41 @@
       </zones>
       <simple-id uuid='{348EC174-BDE2-48DD-812A-AA84545DBB91}' />
     </dashboard>
+    <dashboard name='Ep14. 퀵 테이블 계산하기_2' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4253' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5083' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15560'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{6955C61F-D279-478E-A299-D434E1D2C276}' />
+    </dashboard>
     <dashboard name='매출 대시보드'>
       <layout-options>
         <title>
@@ -924,8 +959,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='21' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='25' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone h='4535' id='14' type-v2='title' w='99064' x='468' y='885'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1001,13 +1036,13 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='39'>
+          <strip size='38'>
             <card type='columns' />
           </strip>
-          <strip size='39'>
+          <strip size='38'>
             <card type='rows' />
           </strip>
-          <strip size='38'>
+          <strip size='37'>
             <card type='title' />
           </strip>
         </edge>
@@ -1113,10 +1148,15 @@
       <active id='3' />
       <simple-id uuid='{00639F59-BCE8-4512-9164-C8BE5046DD49}' />
     </window>
-    <window class='dashboard' maximized='true' name='Ep13. 퀵 테이블 계산하기_1'>
+    <window class='dashboard' name='Ep13. 퀵 테이블 계산하기_1'>
       <viewpoints />
       <active id='3' />
       <simple-id uuid='{C89070DF-538C-4F77-8106-003E7410EBAB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Ep14. 퀵 테이블 계산하기_2'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{F812ED45-5865-4024-AA44-944E0AD9DC67}' />
     </window>
   </windows>
   <thumbnails>
@@ -1228,6 +1268,52 @@
       IKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQFIKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQF
       IKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQFIKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQF
       IKYpADFNAYhpCkBM+w/2cV+rLzMsOwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Ep14. 퀵 테이블 계산하기_2' width='192'>
+      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
     </thumbnail>
     <thumbnail height='192' name='매출 대시보드' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
@@ -1632,46 +1718,61 @@
       TftgAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='연간 매출' width='192'>
-      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
+      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
     </thumbnail>
     <thumbnail height='192' name='월간 매출' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
