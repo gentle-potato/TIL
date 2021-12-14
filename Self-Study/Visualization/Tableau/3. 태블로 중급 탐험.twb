@@ -920,6 +920,41 @@
       </zones>
       <simple-id uuid='{F99F9D21-E57B-4F40-BDC2-A7D7708180DC}' />
     </dashboard>
+    <dashboard name='Ep16. 매개 변수 만들기_1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F373917C-506F-4372-B697-353AAD7B49AF}' />
+    </dashboard>
     <dashboard name='매출 대시보드'>
       <layout-options>
         <title>
@@ -994,8 +1029,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='27' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='29' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone h='4535' id='14' type-v2='title' w='99064' x='468' y='885'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1193,10 +1228,15 @@
       <active id='3' />
       <simple-id uuid='{F812ED45-5865-4024-AA44-944E0AD9DC67}' />
     </window>
-    <window class='dashboard' maximized='true' name='Ep15. 계산된 필드 만들기'>
+    <window class='dashboard' name='Ep15. 계산된 필드 만들기'>
       <viewpoints />
       <active id='3' />
       <simple-id uuid='{9C696C87-C232-4E74-B2BC-55BFA684689C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Ep16. 매개 변수 만들기_1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{FB46F485-9176-4BD0-9239-D546DF78AE38}' />
     </window>
   </windows>
   <thumbnails>
@@ -1384,6 +1424,43 @@
       IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
       IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY+yfM454udC8SywAAAABJRU5E
       rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Ep16. 매개 변수 만들기_1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAG6ElEQVR4nO3cf2ycdQHH8U+72/Xu1h9cLYM27bVjZRsIsu6qTlEpjOAg0eiIieEv54/N
+      PzTGiH/MRNOgwQSiIf5YMkgwQcTJTEAloEvdnFFnwq5srvvRlrVbd9frdesd7fqb9s4/WrpV
+      HCZi1rnP+5X0j6d5+v1+nyd53/PcPekVFQqFggBTxUu9AGApEQCsEQCsLWttbW19a+PHj35L
+      Tz/7vPYePKoHNn100Y4Xshk99dMnVNHQpKqyEu1/abce/+FPNBms1K2r6y7uOHVe3/7uj9TV
+      vl8nT/Woq/uU/no8rfi6Wr3WflgHXtmjjs5TOtzZpd+3JXTnB++QJO158nGtWH2njrX9XPs7
+      BrVn93PadPddC8O+/NxOdY2s0JrY9ZesakqPfOd7Ki0v1dPP/FLT6Q69EVmt6mhIjz36iEKR
+      UqXTaaXTac1ouSrKVujk0dd0JtmvnU/9TPdsvFmP7XxxYQ1vyc9M6aVf/0LHU+O65dJjwzUn
+      cOnG65kx7dq1S5LU35nQzmdfVO6NUX3l4R3KnDiodDql0ckZTQ716Fd/aNfWL3xJ9atuWjxi
+      flqllTVqrJlUT+5NlYQKKqggFQfVFI9Lw6eV6MkpWBHU4vffeR09nNBQ71k13rNJA93tkqTs
+      YEpH/tGhYF1cGu5W275BbWj+gCrLI5LyKlkRVTzerLa2P0qSOk+c0PpVH9LdLS0qSCqaH312
+      dkaStO72JknS3r17pUJB/+4zgLPdHTqbSuvNycp3d3Zx1Vt8C3Qhre3bt+sbrT/Q5GhOZXV3
+      aMe2T2v3C6+oZfOntDZ2gyQpO9Cv3MiIXv3bfn3/iSffcYK+vr5F26nUgGKxWiX7+jR7ye9r
+      GxoVWlZQ+XuqNZLp1fDYlCRpfGxc5dEqRSMBRW+oVbSiTOMTE/N/tVwro2ElEodUHZsLcc26
+      dcpPXFAymVR7IqHE/M/Jrt6L8+WnpeLgZddcf0tcmz/W/I7HhWvDoiuAwlFt+/w2FQcj0nRK
+      ucGU/n4orcrKBp3uPqFkZkiBY0dU//4GlYeCatoQ18nf7NP5gaRmAmW6sapCklSQNDs7q6Ki
+      gGKxmHLzw2fOdunUaESf2VCqgeGY0v0TC1OvWbtW7Wlpy0NbJUnXheZeu2tX3azaVdJffveM
+      dNO9+sh7axYtP1xerni8WfF4s3qPtysUDSkQDmvjxo3qPzc3c344qT/3ZnS/pIkLOb2w53nd
+      /+BnL3tScoP9OtbZo0xySn39g4rVrHxXJxlXr0UBbL73LiUSCQVKr1fL2jKNZAc1sXq9vrjl
+      Ab2677eqarhdo+kujRfHteNrn9O+g0f0zYe/rqFMlyZDNXMBhKv1iZbbNJUPqG42q3NjRYqo
+      TPnpMWVGCvrql7cqd+aoqlfOKrhsemHuYCisVM8RJZbPvfKXRMqV18VL1HVV1VJp6G0HUFKc
+      16FEYuFWp74oL0n604EDWnPr+yRJxRW12nJfjaS8enr79MmHtqo0FJSmh1Rfd6OGzw/o9TOp
+      +RGKFQnmlR6VGqpK1Jc+RwDXsKLLPQjr70zo4OkpPfjxD1/pNV1x/xrAbeubVLJsSZeEK+Sy
+      AQAOeA4AawQAawQAa4H/vAuuJtlsVtlsdqmX8TaNjY1LvYT/ClcAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWOMfYv7PhMNhVVbyjXX/K3wrBKxxCwRr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr/wS+W7gqXCH/qAAA
+      AABJRU5ErkJggg==
     </thumbnail>
     <thumbnail height='192' name='매출 대시보드' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
