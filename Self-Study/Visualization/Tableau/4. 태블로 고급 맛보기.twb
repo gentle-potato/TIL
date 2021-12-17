@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook original-version='18.1' source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources />
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5E3134E1-B6AA-4BB4-BC26-AC8962D85339}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Ep18. 태블로 작동 순서' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{99BF0C53-3B77-4B7B-BA32-0A9D855C4385}' />
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='worksheet' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB3E02EB-CBF2-459F-9527-F4A361B9C845}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Ep18. 태블로 작동 순서'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{C7FDB284-BF56-4560-94FD-31EDC5500E04}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Ep18. 태블로 작동 순서' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGp0lEQVR4nO3cb2jcdwHH8c8ll//p0rtkySVtkpZG28SMqRexCHWi4koflI0he+BAfWAD
+      rgo6GVuZGsGVtXR74F/KmAj6QGes/5A+GNsYsqVu+a22sUtjQ/+kl9zl2ibN8u9ySe7ng8DN
+      UIYwcKn7vF9wD+7u+/ve937c+/79uIuEYRgKMFWy0QsANhIBwBoBwNq6AH58+JB6e3v1jUOH
+      bxk4OzWpnxz7oUYmZqXVnH7+9JP6+sFv6pXBt9YPXLqu737/KQVBoJPPP6f+/n492/+iJOkH
+      TzymIAgUBIFOvXBCR5/tlyRNpi4XLw8GX9bhY88Vp5u5Mak3XvqzHn7sSQ0NX9CRI0fWrpgb
+      16Pfe+qd7YJA8/nVdUvJzV7Twwe/pdzK+o85v3jmqK6vSMqldfRHv3pPOw4fDNH/PDM6Oa/j
+      x49LkiZGAv3s13/U9M05HfzO45ocHlA6Pa653Iryb09r6OqsHtx/j1586VXd09P1ziSFvHLL
+      BUlSZWWV5pZChVp7AN67d29xWKS6Xl/Y0y5JOj3wmmq271R1RArDSn16T09xXF19k7KZtEoL
+      S2re0qrF2WldGZ9UeyKuz+6+W9MTF5VZqlbn9oRWVwpSeamkUGffGNClzLSeOPRtvXDyr9r2
+      oU7dtWvH2n2bX1I8Kmk5FN8BeFv/Fmg2rd7eXj3S97Ryc9Pa1Hq3Hj9wv37zh5P6zN77tLOt
+      aW1caYXqKkKdPjui1ratt0za0LRVyWRSd1SXaWxsTJKUn5/ReCpVfLY+c25E2WxWoaRCYS2Y
+      VCqlSEm5mhMNxblSo/9UbNceHet7RIMDr+lz+/arfUuTJjNZ3dnUKEkqhGvbX7uWlSStLM5p
+      uaRCW1sSev53J9TS0qz84oJWJeVuXtXi7Iye+ekvFZwe0vrXDLhZH0BVTAcOHNBDD+yTJE1n
+      x3Vq8Izi8bguXxhWavKGRs6d0ZVLFzSzWq2eno9r6M1BXc+klLk+U5ymEIaaf3tKoxfH1NbW
+      Jkkqr6nTJ3fvVjKZVDKZVFdrTBdSNxSRtO/Bh7SnJ6nz588rmUxqR/uW4lz1TVtUES5qaHhU
+      dzbU6ZW/DUiSGmK1OvX3QLWN29TZ3qizwesqq41JkqJVmzQ8PKxkMqlEIrF2mx+7S6WS+n/7
+      e33t0T5tymfUvL1Dpf/DnYvbX2lfX19f8Vx+VudHryh7c1HbGir08uvnlGjv0Je+uF9vBa9q
+      saRW+bkb2vWJz2tHrKDhS1l95atf1kzmomaWy5VoqJPKalVfHSo7Pae62kqV12xWZc1mfXhb
+      s/7ypxNqaGyWJJXVxPTR7p3aXBPVm6fPaCKdVjQa1cLCgtLpjOKNzYqWSGUVVWppaSmeJlJj
+      6u7uViRSoonUVdXcsVklkVBLywV1fqRLldG1pv917h9ayK+oPh5XOp3W0mpEsboaxZpa1d7c
+      oK6uTq0WVjU1k1N3546N2Pe4DUTe7UDYxEiggctLeuDeT73fawLeN+8aAOCA4wCwRgCwRgCw
+      Fv3vQ3A7mZqa0tTU1EYv4xYdHR0bvYT3hFcAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWOMHMf9nqqqqFI/HN3oZHxj8KwSs8RYI1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1v4Nf2izXBPpt2YAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='시트 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
