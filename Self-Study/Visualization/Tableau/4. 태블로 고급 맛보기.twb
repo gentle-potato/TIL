@@ -57,9 +57,9 @@
       <zones>
         <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
-            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
-            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
-            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+            <zone h='4253' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5083' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15560'>
               <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='' id='1' />
@@ -77,8 +77,43 @@
       </zones>
       <simple-id uuid='{99BF0C53-3B77-4B7B-BA32-0A9D855C4385}' />
     </dashboard>
+    <dashboard name='Ep19. 대시보드 액션 적용하기_1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4253' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5083' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15560'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{8FB93481-1574-459B-BA77-B80BB830124B}' />
+    </dashboard>
   </dashboards>
-  <windows>
+  <windows saved-dpi-scale-factor='1.25'>
     <window class='worksheet' name='시트 1'>
       <cards>
         <edge name='left'>
@@ -102,47 +137,111 @@
       </cards>
       <simple-id uuid='{DB3E02EB-CBF2-459F-9527-F4A361B9C845}' />
     </window>
-    <window class='dashboard' maximized='true' name='Ep18. 태블로 작동 순서'>
+    <window class='dashboard' name='Ep18. 태블로 작동 순서'>
       <viewpoints />
       <active id='3' />
       <simple-id uuid='{C7FDB284-BF56-4560-94FD-31EDC5500E04}' />
     </window>
+    <window class='dashboard' maximized='true' name='Ep19. 대시보드 액션 적용하기_1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{C1AF92F6-3E76-4789-87A5-22CB442CCE18}' />
+    </window>
   </windows>
   <thumbnails>
     <thumbnail height='192' name='Ep18. 태블로 작동 순서' width='192'>
-      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAAGp0lEQVR4nO3cb2jcdwHH8c8ll//p0rtkySVtkpZG28SMqRexCHWi4koflI0he+BAfWAD
-      rgo6GVuZGsGVtXR74F/KmAj6QGes/5A+GNsYsqVu+a22sUtjQ/+kl9zl2ibN8u9ySe7ng8DN
-      UIYwcKn7vF9wD+7u+/ve937c+/79uIuEYRgKMFWy0QsANhIBwBoBwNq6AH58+JB6e3v1jUOH
-      bxk4OzWpnxz7oUYmZqXVnH7+9JP6+sFv6pXBt9YPXLqu737/KQVBoJPPP6f+/n492/+iJOkH
-      TzymIAgUBIFOvXBCR5/tlyRNpi4XLw8GX9bhY88Vp5u5Mak3XvqzHn7sSQ0NX9CRI0fWrpgb
-      16Pfe+qd7YJA8/nVdUvJzV7Twwe/pdzK+o85v3jmqK6vSMqldfRHv3pPOw4fDNH/PDM6Oa/j
-      x49LkiZGAv3s13/U9M05HfzO45ocHlA6Pa653Iryb09r6OqsHtx/j1586VXd09P1ziSFvHLL
-      BUlSZWWV5pZChVp7AN67d29xWKS6Xl/Y0y5JOj3wmmq271R1RArDSn16T09xXF19k7KZtEoL
-      S2re0qrF2WldGZ9UeyKuz+6+W9MTF5VZqlbn9oRWVwpSeamkUGffGNClzLSeOPRtvXDyr9r2
-      oU7dtWvH2n2bX1I8Kmk5FN8BeFv/Fmg2rd7eXj3S97Ryc9Pa1Hq3Hj9wv37zh5P6zN77tLOt
-      aW1caYXqKkKdPjui1ratt0za0LRVyWRSd1SXaWxsTJKUn5/ReCpVfLY+c25E2WxWoaRCYS2Y
-      VCqlSEm5mhMNxblSo/9UbNceHet7RIMDr+lz+/arfUuTJjNZ3dnUKEkqhGvbX7uWlSStLM5p
-      uaRCW1sSev53J9TS0qz84oJWJeVuXtXi7Iye+ekvFZwe0vrXDLhZH0BVTAcOHNBDD+yTJE1n
-      x3Vq8Izi8bguXxhWavKGRs6d0ZVLFzSzWq2eno9r6M1BXc+klLk+U5ymEIaaf3tKoxfH1NbW
-      Jkkqr6nTJ3fvVjKZVDKZVFdrTBdSNxSRtO/Bh7SnJ6nz588rmUxqR/uW4lz1TVtUES5qaHhU
-      dzbU6ZW/DUiSGmK1OvX3QLWN29TZ3qizwesqq41JkqJVmzQ8PKxkMqlEIrF2mx+7S6WS+n/7
-      e33t0T5tymfUvL1Dpf/DnYvbX2lfX19f8Vx+VudHryh7c1HbGir08uvnlGjv0Je+uF9vBa9q
-      saRW+bkb2vWJz2tHrKDhS1l95atf1kzmomaWy5VoqJPKalVfHSo7Pae62kqV12xWZc1mfXhb
-      s/7ypxNqaGyWJJXVxPTR7p3aXBPVm6fPaCKdVjQa1cLCgtLpjOKNzYqWSGUVVWppaSmeJlJj
-      6u7uViRSoonUVdXcsVklkVBLywV1fqRLldG1pv917h9ayK+oPh5XOp3W0mpEsboaxZpa1d7c
-      oK6uTq0WVjU1k1N3546N2Pe4DUTe7UDYxEiggctLeuDeT73fawLeN+8aAOCA4wCwRgCwRgCw
-      Fv3vQ3A7mZqa0tTU1EYv4xYdHR0bvYT3hFcAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
-      WCMAWCMAWCMAWCMAWCMAWCMAWOMHMf9nqqqqFI/HN3oZHxj8KwSs8RYI1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
-      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
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Ep19. 대시보드 액션 적용하기_1' width='192'>
+      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
+      hoUEnnejiYmJTBgdAkMmnvnZSyMrVybx+OMPfNPH63C0IJPMYzBj8gToaifp/b9S1dj6tTlc
+      uDtmHn7uF36leHPSnxgZNYdRgzxpb25g9erVNJ7uxNXZmbb2NoZdNo7Z024477Kpn7xLwFUz
+      mBAedN7pyR+u4qrpMdQX72ZHxgHHeP/BI7l+bOg552A8/fVi0UVx6vOjEK3VLHj5PZYsmn8J
+      d0nk0uk7AJH/c3onWExTAGKaAhDTLslngeSbU1NTQ03Nf987wOHh4d/2LlwUXQHENAUgpikA
+      MU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpn+I+R/j4eFB
+      wFffiif/MX0rhJimX4HENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkK
+      QEz7J9Jz1vRzLR7SAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='시트 1' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
